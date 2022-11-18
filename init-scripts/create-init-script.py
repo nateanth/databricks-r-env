@@ -58,7 +58,7 @@ AuthMech        = 3
 UID             = token
 
 [snowflake]
-Description.    = SnowflakeDB
+Description     = SnowflakeDB
 Driver          = SnowflakeDSIIDriver
 Locale          = en-US
 SERVER          = ${SF_ACCOUNT}.snowflakecomputing.com
