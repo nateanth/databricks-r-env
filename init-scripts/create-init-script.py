@@ -115,4 +115,4 @@ fi
 '''
 
 dbutils.fs.mkdirs("/databricks/init/na")
-dbutils.fs.put("/databricks/init/na/r-env-init-aws.sh", script, True)
+dbutils.fs.put("/databricks/init/na/r-env-init.sh", script, True)
