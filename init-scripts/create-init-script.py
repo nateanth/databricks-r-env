@@ -1,3 +1,4 @@
+# Databricks notebook source
 script = '''#!/bin/bash
 
 # SET VARIABLES
@@ -99,14 +100,13 @@ con <- dbConnect(
 )
   """ >> /etc/rstudio/connections/'Databricks ODBC.R'
 
-  echo """install.packages(c("DBI", "dplyr","dbplyr","odbc"))
-library(DBI)
+  echo """library(DBI)
 library(dplyr)
 library(dbplyr)
 library(odbc)
 myconn <- DBI::dbConnect(
   odbc::odbc(), 
-  dsn="snowflake", 
+  dsn='snowflake', 
   uid='\${0:uid=USERNAME}', 
   pwd='\${1:pwd=Snowflak123}')
   """ >> /etc/rstudio/connections/'snowflake.R'
